@@ -1,0 +1,163 @@
+.product-tabs {
+  margin: 1px auto;
+  padding: 2px;
+  text-align: center;
+  overflow-x: hidden;
+  
+}
+
+.tab-list {
+  padding: 1px;
+  margin: 2px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  align-items:center;
+  justify-content:center;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+.tab-list button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e1301;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab-list button.active {
+  background-color: #5b2c01;
+}
+
+.product-container {
+  padding: 20px 0; /* Adjust padding as needed */
+  margin: 20px 0;
+  display: flex;
+  background-color:#bfbaba;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: nowrap; /* Ensure cards stay in a single row */
+  overflow: hidden; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; 
+}
+
+.product-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 320px; 
+  height: 400px;
+  background: #220202;
+  border-radius: 20px;
+  overflow: hidden;
+  margin:20px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "Drinksio";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-weight: 600;
+  font-size: 4em;
+  color: rgb(171, 120, 120, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.card .imgBox img {
+    max-width: 100%;
+   height:150px;
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+
+}
+
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #130901;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+

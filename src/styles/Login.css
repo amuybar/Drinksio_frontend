@@ -1,0 +1,52 @@
+/* Login tab content */
+#login-tab-content {
+  background-color: orange;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Login form */
+.login-form {
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Checkbox */
+.checkbox {
+  margin-right: 5px;
+}
+
+/* Submit button */
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Help text */
+.help-text {
+  text-align: center;
+}
+
+.help-text a {
+  color: #007bff;
+}
+@media screen and (max-width: 600px) {
+  #login-tab-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+.about {
+  text-align: center;
+  padding: 50px 0; 
+}
+
+.about h2 {
+  font-size: 2rem; 
+  margin-bottom: 30px; 
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 30px; 
+}
+
+.about-card {
+  background-color: #ffffff; /* Adjust background color as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 30px; /* Adjust padding as needed */
+  text-align: left; /* Align text to left */
+  width: 300px; /* Adjust card width as needed */
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
+}
+
+.about-card:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+}
+
+.about-icon {
+  font-size: 3rem; /* Adjust icon size as needed */
+  color: #240e00; /* Adjust icon color as needed */
+  margin-bottom: 15px; /* Adjust margin as needed */
+  border:1px solid #240e00;
+  padding:20px;
+  border-radius:50%;
+}
+
+.about-card h3 {
+  font-size: 1.2rem; /* Adjust heading size as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+  color: #140b00;
+}
+
+.about-card p {
+  line-height: 1.5; /* Adjust line height as needed */
+  color: #462601; /* Adjust text color as needed */
+}
+
+.explore-button {
+  background-color: #1c0703; /* Adjust button background color as needed */
+  color: #fff; /* Adjust button text color as needed */
+  padding: 15px 30px; /* Adjust button padding as needed */
+  border: none;
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer;
+  margin-top: 30px; /* Adjust margin as needed */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  background-color: #4d2900; /* Adjust button hover color as needed */
+}
